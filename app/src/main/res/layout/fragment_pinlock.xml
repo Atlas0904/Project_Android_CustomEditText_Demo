@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:background="@color/white"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/colorPrimary"
-    tools:context="com.example.atlas_huang.pinlocktm.MainActivity">
-
-    <fragment
-        android:id="@+id/status_fragment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    android:layout_height="match_parent">
 
     <RelativeLayout
         android:id="@+id/up_layout"
@@ -23,49 +17,46 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
-            android:backgroundTint="@color/colorPincodeEnter"
             android:textSize="48sp"
             android:textColor="@color/colorPincodeEnter"
             android:maxLength="1"
+            android:background="@drawable/edittext_pincode"
             />
         <EditText
             android:id="@+id/ed2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ed1"
             android:layout_centerInParent="true"
             android:textSize="48sp"
+            android:backgroundTint="@color/colorPincodeEnter"
+            android:textColor="@color/colorPincodeEnter"
+            android:layout_toRightOf="@+id/ed1"
             android:maxLength="1"
             />
         <EditText
             android:id="@+id/ed3"
-            android:text="3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ed2"
             android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPincodeEnter"
             android:textSize="48sp"
-            android:background="@drawable/edt_pincode_selector"
+            android:textColor="@color/colorPincodeEnter"
+            android:layout_toRightOf="@+id/ed2"
+            android:maxLength="1"
             />
         <EditText
             android:id="@+id/ed4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/ed3"
             android:layout_centerInParent="true"
+            android:backgroundTint="@color/colorPincodeEnter"
+            android:textColor="@color/colorPincodeEnter"
             android:textSize="48sp"
-            android:text="4"
-            android:textColor="@color/colorAccent"
-            android:background="@drawable/ed_so_thickness"
+            android:layout_toRightOf="@+id/ed3"
+            android:maxLength="1"
             />
+
     </RelativeLayout>
 
-    <EditText
-        android:id="@+id/down"
-        android:layout_below="@+id/up_layout"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Down"
-        android:background="@drawable/custom_edittext"/>
 
 </RelativeLayout>
